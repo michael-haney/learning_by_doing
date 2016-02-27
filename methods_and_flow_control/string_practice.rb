@@ -4,6 +4,6 @@ puts base
 puts base.capitalize
 puts base.upcase
 puts base.capitalize.sub('string', "'string'")
-puts "The string '" + base + "' has #{base.length + 2} characters"
+puts "The string '" + base + "' has #{base.length} characters"
 puts base.reverse
 puts "Practice " * 2 + "Practice!"
