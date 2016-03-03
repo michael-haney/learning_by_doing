@@ -4,7 +4,7 @@
 
 1) Run from RubyMine
 2) In terminal, type `ruby "filename"` 
-3) In terminal, type `chmod 755 "filename"` to change permissions and run the file.
+3) In terminal, type `chmod 755 "filename"` to change permissions and run the file in iterm.
 
 ##Rubocop complaints
 
