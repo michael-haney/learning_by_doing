@@ -1,18 +1,18 @@
 #!/usr/bin/env ruby
 
-def lyrics("number", "number - 1")
-  line_one = "#{number} bottles of beer on the wall, #{number} bottles of beer."
-  line_two = "Take one down and pass it around, #{number - 1} bottles of beer on the wall."
-  space = ""
-end
-
-def space_between_lines(space)
-  puts "#{line_one}"
-  puts "#{line_two}"
+def bottles_of_beer
+  bottles = 99
+  no_bottles = "No more"
+  while bottles > 0
+    if bottles == 0
+      puts "#{no_bottles} bottles of beer on the wall. #{no_bottles} bottles of beer."
+      "Take one down, pass it around. #{no_bottles} of beer on the wall."
+    elsif bottles >= 1
+      puts "#{bottles} bottles of beer on the wall. #{bottles} bottles of beer."
+    bottles = bottles - 1
+      puts "Take one down, pass it around. #{bottles} bottles of beer on the wall."
+      puts ""
   end
-puts "#{lyrics}"
-
-def song(number = 99)
-  puts lyrics(number)
-end
-
+  end
+  end
+puts bottles_of_beer
