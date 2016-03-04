@@ -1,20 +1,22 @@
 #!/usr/bin/env ruby
-numbers = (1..100).to_a
-#fizzbuzz_numbers = numbers % 3 == 0 && numbers % 5 == 0
-fizz_numbers = numbers.collect{|e| e % 3 == 0}
-#buzz_numbers = numbers % 5 == 0
-#
-#if fizzbuzz_numbers
-  #puts "FizzBuzz"
-if fizz_numbers
- puts "Fizz"
-#elsif buzz_numbers
-#  puts "Buzz"
-else
- puts "#{numbers}"
- # end
+
+def fizz_buzz(number)
+ if number % 3 == 0 && number % 5 == 0
+  'FizzBuzz'
+ elsif number % 3 == 0
+  'Fizz'
+ elsif number % 5 == 0
+  'Buzz'
+ else
+  number
+ end
+end
+fizzbuzz_array = []
+(1..100).to_a.each do |number|
+ fizzbuzz_array.push(fizz_buzz(number))
 end
 
+puts fizzbuzz_array
 
 
 
