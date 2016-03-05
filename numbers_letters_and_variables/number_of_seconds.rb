@@ -15,5 +15,5 @@ old = 100
 puts "  #{number_of_minutes_per_hour * number_of_seconds_per_minute} seconds in an hour,"
 puts "  #{number_of_hours_per_day * number_of_minutes_per_hour * number_of_seconds_per_minute} seconds in a day,"
 puts "  #{number_of_days_per_week * number_of_hours_per_day * number_of_minutes_per_hour * number_of_seconds_per_minute} seconds in a week"
-puts "That means when you are 20, you've been alive for #{young * number_of_weeks_per_year * number_of_days_per_week * number_of_hours_per_day * number_of_minutes_per_hour * number_of_seconds_per_minute} seconds, and if you make it to 100, you will have lived #{old * number_of_weeks_per_year * number_of_days_per_week * number_of_hours_per_day * number_of_minutes_per_hour * number_of_seconds_per_minute} seconds. Make them count!"
+puts "  That means when you are 20, you've been alive for #{young * number_of_weeks_per_year * number_of_days_per_week * number_of_hours_per_day * number_of_minutes_per_hour * number_of_seconds_per_minute} seconds, and if you make it to 100, you will have lived #{old * number_of_weeks_per_year * number_of_days_per_week * number_of_hours_per_day * number_of_minutes_per_hour * number_of_seconds_per_minute} seconds. Make them count!"
 
