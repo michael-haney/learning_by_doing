@@ -1,5 +1,3 @@
-INITIALIZE ISNT WORKING
-
 >If I pet the dog when hes groggy DONE leads to awake 
 If I pet the dog when hes awake DONE leads to awake/does nothing
 If I pet the dog when hes hungry DONE loop - bites off finger
@@ -20,5 +18,5 @@ If i feed the dog when hes awake DONE loop - defacate
 >If i feed the dog when hes hungry DONE leads to contempt
 If i feed the dog when hes contempt DONE loop - overeate
 
-PATH - GROGGY - Awake - hungry - contempt 
+PATH - Groggy - Awake - hungry - contempt 
 pet - let_out - feed - walk
