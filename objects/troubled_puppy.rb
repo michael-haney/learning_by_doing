@@ -1,12 +1,10 @@
 #!/usr/bin/env ruby
 
 class Puppy
-  attr_accessor :mood, :pet, :let_out, :walk, :feed,
-
-    def initialize
-      @mood = 'groggy'
-      puts 'You and your new puppy just woke up! Navigate through the day successfully to break through the loop! Use .mood for tips.'
-    end
+  def initialize
+    @mood = 'groggy'
+    puts 'You and your new puppy just woke up! Navigate through the day successfully to break through the loop! Use .mood for tips.'
+  end
 
   def mood
     puts "Your puppy is #{@mood}."
@@ -14,58 +12,58 @@ class Puppy
 
   def pet
     if @mood == 'groggy' || @mood == 'awake'
-      puts 'The puppy accepts your humble greetings.'
       @mood = 'awake'
+      'The puppy accepts your humble greetings.'
     elsif @mood == 'hungry'
-      puts 'The puppy bites off your finger thinking it\'s a treat.' #LOOP HERE
       @mood = 'groggy'
+      'The puppy bites off your finger thinking it\'s a treat.' #LOOP HERE
     else
-      puts 'The puppy accepts your humble greetings.'
       @mood = 'contempt'
+      'The puppy accepts your humble greetings.'
     end
   end
 
   def let_out
     if @mood == 'awake'
-      puts 'The puppy wags it\'s tail and proceeds to do unspeakable things outside.'
       @mood = 'hungry'
+      'The puppy wags it\'s tail and proceeds to do unspeakable things outside.'
     elsif @mood == 'hungry'
-      puts 'The puppy chases after a squirrel, captures it, and gets rabies.' #LOOP HERE
       @mood = 'groggy'
+      'The puppy chases after a squirrel, captures it, and gets rabies.' #LOOP HERE
     elsif @mood == 'groggy'
-      puts 'It is impolite to not greet someone before immediately going to the bathroom!' #LOOP HERE
-      @mood = 'groggy' #NEED THIS LINE??
+      @mood = 'groggy'
+      'It is impolite to not greet someone before immediately going to the bathroom!' #LOOP HERE
     else
-      puts 'The puppy basks in the sunlight, but returns wound up.'
       @mood = 'contempt'
+      'The puppy basks in the sunlight, but returns wound up.'
     end
   end
 
   def walk
     if @mood == 'groggy'
-      puts 'The puppy hits the snooze button.' #LOOP HERE
       @mood = 'groggy'
+      'The puppy hits the snooze button.' #LOOP HERE
     elsif @mood == 'awake'
-      puts 'The puppy refuses your advances with the leash without his daily vitamins.' #LOOP HERE
       @mood = 'groggy'
+      'The puppy refuses your advances with the leash without his daily vitamins.' #LOOP HERE
     elsif @mood == 'contempt'
-      puts 'The puppy is exhausted from all of the fun things you did and falls asleep for the day!' #END LOOP
+      'The puppy is exhausted from all of the fun things you did and falls asleep for the day!' #END LOOP
     elsif @mood == 'hungry'
-      puts 'The dog collapses mid walk from lack of sustenance.' #LOOP HERE
       @mood = 'groggy'
+      'The dog collapses mid walk from lack of sustenance.' #LOOP HERE
     end
   end
 
   def feed
     if @mood == 'groggy' || @mood == 'awake'
-      puts 'The puppy runs off and defecates on your new rug.' #LOOP HERE
       @mood = 'groggy'
+      'The puppy runs off and defecates on your new rug.' #LOOP HERE
     elsif @mood == 'hungry'
-      puts 'The puppy chows down.'
       @mood = 'contempt'
+      'The puppy chows down.'
     elsif @mood == 'contempt'
-      puts 'The puppy goes into a food coma.' #LOOP HERE
       @mood = 'groggy'
+      'The puppy goes into a food coma.' #LOOP HERE
     end
   end
 end
