@@ -1,3 +1,9 @@
+#Troubled_puppy Readme
+
+Make it to the end of the day with your bothersome puppy! Use the commands pet, let_out, walk, and feed in the correct order in order to make it.
+Don't forget to use the command mood if you need a hint!
+
+###Notes for editing
 >If I pet the dog when hes groggy DONE leads to awake 
 If I pet the dog when hes awake DONE leads to awake/does nothing
 If I pet the dog when hes hungry DONE loop - bites off finger
