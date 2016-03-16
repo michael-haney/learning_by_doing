@@ -2,7 +2,7 @@
 
 # This is the CashRegister class
 class CashRegister
-  attr_accessor :purchase, :total, :pay
+  attr_reader :purchase, :total, :pay
 
   def initialize
     @total = 0.0
@@ -17,7 +17,7 @@ class CashRegister
     if @total > 0.0
       puts "Your new total is #{@total}"
     else
-      puts "Your change is $#{@total * -1}"
+      puts "Your change is $#{@total.abs}"
       @total = 0.0
     end
   end
