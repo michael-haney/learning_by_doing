@@ -13,5 +13,5 @@ puts "If we delete 5, 6 and 7 from the array, we're left with " \
      "[#{numbers.delete_if { |num| num > 4 && num < 8 }.join(',')}]"
 puts "If we add 5 at the beginning of the array, we're left with [#{numbers.insert(0,5).join(',')}]"
 puts "If we add 6 at the end of the array, we're left with [#{numbers.push(6).join(',')}]"
-puts "Only the elements #{numbers.select { |number| number > 8 }} are > 8"
+puts "Only the elements #{numbers.select { |number| number > 8 }} are > 8."
 puts "If we remove all the elements, then the length of the array is #{numbers.clear.length}"
