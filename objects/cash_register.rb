@@ -2,7 +2,6 @@
 
 # This is the CashRegister class
 class CashRegister
-  attr_reader :purchase, :total, :pay
 
   def initialize
     @total = 0.0
